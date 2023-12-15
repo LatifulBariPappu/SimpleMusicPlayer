@@ -21,9 +21,10 @@ public class MainActivity extends AppCompatActivity {
         Uri audioURI= Uri.parse(aPath);
         try{
             mp.setDataSource(this,audioURI);
+            mp.prepare();
         }catch (IOException e){
             e.printStackTrace();
         }
-        mp.prepare();
+
     }
 }
