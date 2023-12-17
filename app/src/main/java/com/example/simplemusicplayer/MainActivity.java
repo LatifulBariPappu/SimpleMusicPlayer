@@ -55,5 +55,15 @@ public class MainActivity extends AppCompatActivity {
                 mp.seekTo(0);
             }
         });
+
+//        mp.seekTo();
+//        mp.getDuration();
+//        mp.getCurrentPosition();
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mediaPlayer) {
+//
+//            }
+//        });
     }
 }
