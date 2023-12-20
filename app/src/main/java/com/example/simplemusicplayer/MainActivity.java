@@ -28,9 +28,11 @@ public class MainActivity extends AppCompatActivity {
         MediaPlayer mp=new MediaPlayer();
         mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
         String aPath="android.resourse://"+getPackageName()+"/raw/amaydekona";
-        Uri audioURI= Uri.parse(aPath);
+        String onlineAudioPath="https://soundcloud.com/djactor/2013-1";
+//      Uri audioURI= Uri.parse(aPath);
+        Uri onlineURI=Uri.parse(onlineAudioPath);
         try{
-            mp.setDataSource(this,audioURI);
+            mp.setDataSource(this,onlineURI);
             mp.prepare();
         }catch (IOException e){
             e.printStackTrace();
